@@ -1,8 +1,12 @@
 <template>
-  <router-link
-      class="inline-block w-20" v-for="item in menuItems" :key="item.title"
-      :to="{'name': item.route}"
-      >{{ item.title }}</router-link>
+  <div class="flex items-center h-10 w-96 bg-white shadow-md rounded-full">
+    <router-link
+      class="flex-auto text-center h-10 p-1 rounded-full border-4 border-white"
+        v-for="item in menuItems" :key="item.title"
+        :to="{'name': item.route}"
+        >{{ item.title }}
+      </router-link>
+  </div>
 </template>
 
 <script lang="ts">
@@ -35,7 +39,6 @@ export default defineComponent({
 
 <style scoped>
 @layer components {
-
   .router-link-active {
     @apply bg-red-500;
   }

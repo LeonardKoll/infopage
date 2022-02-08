@@ -1,12 +1,12 @@
 <template>
-  <div class="flex flex-col max-w-full border-4 border-indigo-600">
-    <TheHeader class="flex-1"/>
-    <router-view class="flex-1" />
-    <TheFooter class="flex-1"/>
+  <div class="flex flex-col min-h-screen max-w-full bg-gray-100">
+    <TheHeader class="flex-none"/>
+    <router-view class="flex-auto" />
+    <TheFooter class="flex-none"/>
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from 'vue'
 import TheHeader from '@/components/TheHeader.vue'
 import TheFooter from '@/components/TheFooter.vue'

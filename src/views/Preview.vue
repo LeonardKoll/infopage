@@ -1,3 +1,5 @@
 <template>
-    Still Empty.
+    <div>
+        Still Empty.
+    </div>
 </template>
